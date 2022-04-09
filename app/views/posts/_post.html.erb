@@ -1,4 +1,4 @@
-<div id="<%= dom_id post %>">
+<div class = "post" id="<%= dom_id post %>">
   <p>
     <strong>Title:</strong>
     <%= post.title %>
@@ -10,8 +10,12 @@
   </p>
 
   <p>
-    <strong>User:</strong>
-    <%= post.user.name %>
+    <strong>By:</strong>
+    <% if user_signed_in? %>
+      <%= post.user.name %>
+    <% else %>
+      Anonymous
+    <% end %>
   </p>
 
 </div>
