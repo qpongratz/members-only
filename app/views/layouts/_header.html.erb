@@ -4,11 +4,11 @@
   </div>
   <div class="account-buttons">
     <% if user_signed_in? %>
-      <%= link_to current_user.name, edit_user_registration_path %>
-      <%= button_to 'Sign Out', destroy_user_session_path,  method: :delete %>
+      <div class="nav"><%= link_to current_user.name, edit_user_registration_path %></div>
+      <div class="nav"><%= button_to 'Sign Out', destroy_user_session_path,  method: :delete %></div>
     <% else %>
-      <%= link_to 'Sign In', new_user_session_path %>
-      <%= link_to 'Sign Up', new_user_registration_path %>
+      <div class="nav"><%= link_to 'Sign In', new_user_session_path %></div>
+      <div class="nav"><%= link_to 'Sign Up', new_user_registration_path %></div>
     <% end %>
   </div>
 </header>

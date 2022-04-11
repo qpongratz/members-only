@@ -22,6 +22,10 @@ body, html {
   margin: 0;
 }
 
+body, button[type=submit] {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
  .notice, .alert {
   width: 100%;
   padding: .2rem .5rem;
@@ -66,4 +70,19 @@ header span {
 .account-buttons {
   display: flex;
   gap: 1rem;
+}
+
+button, a {
+  text-decoration: none;
+  color: slateblue;
+  background-color: white;
+  box-shadow: none;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.account-buttons .nav {
+  background-color: white;
+  border-radius: 1rem;
+  padding: .2rem 1rem;
 }
