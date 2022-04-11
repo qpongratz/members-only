@@ -1,9 +1,17 @@
-<h1>Posts</h1>
-
-<div class="posts">
-  <% @posts.each do |post| %>
-    <%= render post %>
-  <% end %>
+<div class="content">
+  
+  <div class="sidebar">
+    <% if user_signed_in? %>
+      <%= render 'manager' %>
+    <% else %>
+      <%= render 'explanation' %>
+    <% end %>
+  </div>
+  
+  <div class="posts">
+    <% @posts.each do |post| %>
+      <%= render post %>
+    <% end %>
+  </div>
+  
 </div>
-
-<%= link_to "New post", new_post_path %>

@@ -4,7 +4,7 @@
   </div>
   <div class="account-buttons">
     <% if user_signed_in? %>
-      <div class="nav"><%= link_to current_user.name, edit_user_registration_path %></div>
+      <div class="nav">  <%= link_to "New post", new_post_path %></div>
       <div class="nav"><%= button_to 'Sign Out', destroy_user_session_path,  method: :delete %></div>
     <% else %>
       <div class="nav"><%= link_to 'Sign In', new_user_session_path %></div>
