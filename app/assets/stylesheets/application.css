@@ -46,10 +46,11 @@ body, button[type=submit] {
 }
 
 .post {
-  border: 1px solid black;
   border-radius: .5rem;
   min-width: 15rem;
   flex-grow: 1;
+  -webkit-box-shadow: 1px 1px 12px 0px #c4bbf0; 
+  box-shadow: 1px 1px 12px 0px #c4bbf0;
 }
 
 header {
