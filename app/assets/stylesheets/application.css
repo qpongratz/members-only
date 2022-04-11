@@ -23,7 +23,7 @@ body, html {
 }
 
 body, button[type=submit] {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Merriweather', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
  .notice, .alert {
@@ -121,7 +121,7 @@ input[type='submit'] {
   font-size: 1.2rem;
   box-shadow: none;
   text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Merriweather', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border: 0;
   border-radius: 1rem;
   padding: .2rem 1rem;
