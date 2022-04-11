@@ -5,6 +5,9 @@ class PostsController < ApplicationController
   # GET /posts or /posts.json
   def index
     @posts = Post.includes(:user).all.with_rich_text_body
+    return unless user_signed_in?
+
+    @owned_posts = current_user.posts.all.order(created_at: :desc).limit(5)
   end
 
   # GET /posts/new

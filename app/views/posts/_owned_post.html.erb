@@ -1,0 +1,13 @@
+<div class = "owned_post" id="<%= dom_id owned_post %>">
+  <p class= 'title' >
+    <%= owned_post.title %>
+  </p>
+
+  <p class = 'body'>
+    <%= owned_post.body %>
+  </p>
+
+  <p>
+    <%= link_to 'Delete', post_path(owned_post.id), data: {turbo_confirm: 'Are you sure?', turbo_method:'delete'} %>
+  </p>
+</div>
