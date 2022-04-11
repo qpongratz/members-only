@@ -112,6 +112,20 @@ button, a {
   font-size: 1.2rem;
 }
 
+input[type='submit'] {
+  color: white;
+  background-color: slateblue;
+  font-size: 1.2rem;
+  box-shadow: none;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 0;
+  border-radius: 1rem;
+  padding: .2rem 1rem;
+  margin:1rem 1rem;
+  margin-left: auto;
+}
+
 .account-buttons .nav {
   background-color: white;
   border-radius: 1rem;
