@@ -47,3 +47,23 @@ body, html {
   min-width: 15rem;
   flex-grow: 1;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: slateblue;
+  height: 5rem;
+  padding: 0 2rem;
+}
+
+header span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.account-buttons {
+  display: flex;
+  gap: 1rem;
+}
