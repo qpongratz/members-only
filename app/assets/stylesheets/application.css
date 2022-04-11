@@ -45,6 +45,16 @@ body, button[type=submit] {
   gap: 1rem;
 }
 
+.owned_post, .post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p.title {
+  font-weight: bold;
+}
+
 .post {
   border-radius: .5rem;
   min-width: 15rem;
@@ -86,4 +96,11 @@ button, a {
   background-color: white;
   border-radius: 1rem;
   padding: .2rem 1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  padding: 1rem 2rem;
+  column-gap: 2rem;
 }
