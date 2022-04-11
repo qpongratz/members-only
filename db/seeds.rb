@@ -20,15 +20,15 @@ User.create(
 10.times do
   user = User.create(
     email: Faker::Internet.unique.email,
-    name: Faker::Games::SonicTheHedgehog.character,
+    name: Faker::Games::Pokemon.unique.name,
     password: '123456',
     password_confirmation: '123456'
   )
   5.times do
     Post.create!(
-      title: Faker::Quote.singular_siegler,
+      title: Faker::Book.title,
       user_id: user.id,
-      body: Faker::Quote.jack_handey
+      body: Faker::Fantasy::Tolkien.poem
     )
   end
 end
