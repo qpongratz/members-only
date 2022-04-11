@@ -123,3 +123,9 @@ button, a {
   padding: 1rem 2rem;
   column-gap: 2rem;
 }
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
