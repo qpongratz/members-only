@@ -69,10 +69,7 @@ p.title {
   flex-grow: 1;
   -webkit-box-shadow: 1px 1px 12px 0px #c4bbf0; 
   box-shadow: 1px 1px 12px 0px #c4bbf0;
-}
-
-.sidebar h1 {
-  padding:0 2rem;
+  padding: 0 2rem;
 }
 
 .owned_post {
