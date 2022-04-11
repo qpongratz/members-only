@@ -92,11 +92,6 @@ header {
   padding: 0 2rem;
 }
 
-header span {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-}
 
 .account-buttons {
   display: flex;
@@ -110,6 +105,13 @@ button, a {
   box-shadow: none;
   border: none;
   font-size: 1.2rem;
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background-color: slateblue;
 }
 
 input[type='submit'] {
