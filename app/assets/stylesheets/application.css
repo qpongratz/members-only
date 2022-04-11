@@ -75,7 +75,8 @@ p.title {
 
 .owned_post {
   border-top: 1px solid rgb(206, 206, 206);
-  border-bottom: 1px solid rgb(206, 206, 206)
+  border-bottom: 1px solid rgb(206, 206, 206);
+  padding: 0;
 }
 
 .owned_post + .owned_post {
