@@ -3,9 +3,7 @@
     <%= owned_post.title %>
   </p>
 
-  <p class = 'body'>
-    <%= owned_post.body %>
-  </p>
+  <%= owned_post.body %>
 
   <p class = 'nav' >
     <%= link_to 'Delete', post_path(owned_post.id), data: {turbo_confirm: 'Are you sure?', turbo_method:'delete'} %>
