@@ -17,6 +17,8 @@ User.create(
   password_confirmation: '123456'
 )
 
+prng = Random.new
+
 10.times do
   user = User.create(
     email: Faker::Internet.unique.email,
@@ -25,10 +27,12 @@ User.create(
     password_confirmation: '123456'
   )
   5.times do
+    length = prng.rand(1..100)
+    post_body = Array.new(length, user.name).join(' ')
     Post.create!(
       title: Faker::Book.title,
       user_id: user.id,
-      body: Faker::Fantasy::Tolkien.poem
+      body: post_body
     )
   end
 end
