@@ -27,7 +27,7 @@ prng = Random.new
     password_confirmation: '123456'
   )
   5.times do
-    length = prng.rand(1..100)
+    length = prng.rand(1..40)
     post_body = Array.new(length, user.name).join(' ')
     Post.create!(
       title: Faker::Book.title,
