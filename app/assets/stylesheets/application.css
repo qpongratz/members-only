@@ -74,6 +74,10 @@ p.title {
   padding: 0 2rem;
 }
 
+.sidebar a {
+  font-size: 1rem;
+}
+
 .owned_post {
   border-top: 1px solid rgb(206, 206, 206);
   border-bottom: 1px solid rgb(206, 206, 206);
